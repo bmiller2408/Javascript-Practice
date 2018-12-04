@@ -2,15 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Creating and Using Arrays</title>
+<title>Using Conditional Statements</title>
 <link href="../_css/site.css" rel="stylesheet">
 <script>
-var authors =
-  [
-  'Ernest Hemingway ',
-  'Dante Alighieri',
-  'Emily Dickinson'
-  ];
+var luckyNumber = prompt('What is your lucky number?','');
 </script>
 </head>
 
@@ -23,15 +18,15 @@ var authors =
   </div>
   <div class="content">
     <div class="main">
-      <h1>Creating and Using Arrays</h1>
-    <script>
-		  document.write('<p>The first author is <strong>');
-      document.write(authors[0] + '</strong></p>');
-      document.write('<p>The last author is <strong>');
-      document.write(authors[.length-1] + '</strong></p>');
-      authors.unshift('Stan Lee');
-	   </script>
-     </div>
+      <h1>Using Conditional Statements</h1>
+      <script>
+if (luckyNumber==7){
+  document.write("<p>Hey, 7 is my lucky number too!</p>");
+} else{
+  document.write("<p>The number " + luckyNumber + " is lucky for you!</p>");
+}
+	  </script>
+    </div>
   </div>
   <div class="footer">
     <p>JavaScript &amp; jQuery: The Missing Manual, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
