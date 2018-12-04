@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Using Conditional Statements</title>
 <link href="../_css/site.css" rel="stylesheet">
+
 <script>
 do {
 var luckyNumber = prompt('What is your lucky number?','');
@@ -34,6 +35,15 @@ if (luckyNumber==7){
   <div class="footer">
     <p>JavaScript &amp; jQuery: The Missing Manual, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
   </div>
+  <script>
+    function printToday(){
+      var today = new Date();
+      document.write(today.toDateString());
+    }
+  </script>
+  <p>Today is <strong>
+    <script>printToday();</script>
+    </strong></p>
 </div>
 </body>
 </html>
